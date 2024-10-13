@@ -11,7 +11,7 @@ export const publishPiece = async (name: string): Promise<void> => {
 
   const distPaths = await findAllPiecesDirectoryInSource()
   const directory = distPaths.find(path => {
-    if (path.endsWith(`/${name}`)) {
+    if (path.endsWith(`/${name}`) || path.endsWith(`\\${name}`)) {
       return true;
     }
     return false
@@ -35,6 +35,7 @@ export const publishPiece = async (name: string): Promise<void> => {
 
 
   await exec(nxPublishProjectCommand)
+  console.log(nxPublishProjectCommand)
 
   console.info(chalk.green.bold(`[publishPiece] success, name=${name}, version=${version}`))
 

@@ -683,6 +683,11 @@
       "@activepieces/server-shared": ["packages/server/shared/src/index.ts"],
       "@activepieces/shared": ["packages/shared/src/index.ts"],
       "@ee/*": ["packages/ee/*"],
+      "@gemboran/piece-dify": ["packages/pieces/community/dify/src/index.ts"],
+      "@gemboran/piece-wapi": ["packages/pieces/community/wapi/src/index.ts"],
+      "@gemboran/piece-whatsapi": [
+        "packages/pieces/community/whatsapi/src/index.ts"
+      ],
       "Aminos": ["packages/pieces/community/Aminos/src/index.ts"],
       "activepieces/piece-microsoft-dynamics-365-business-central": [
         "packages/pieces/community/microsoft-dynamics-365-business-central/src/index.ts"
